@@ -191,24 +191,25 @@ export default function App() {
       <div className="main-nav">
         <h1>Find the Best Dog Tricks</h1>
         <p>Everything you and Fido need to impress.</p>
-      </div>
+      
 
-      <div className="category-nav">
-        {categories.map((cat) => {
-          return (
-            <button
-              key={cat}
-              className="badge"
-              onClick={() => handleClick(cat)}
-            >
-              {cat}
-            </button>
-          );
-        })}
+        <div className="category-nav">
+          {categories.map((cat) => {
+            return (
+              <button
+                key={cat}
+                className="badge"
+                onClick={() => handleClick(cat)}
+              >
+                {cat}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       <div className="content">
-        <div className="card-container">
+        <div className="cardsContainer">
           {filteredTricks.map((trick) => {
             return (
               <Trick
