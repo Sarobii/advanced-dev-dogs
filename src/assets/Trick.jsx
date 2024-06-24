@@ -16,11 +16,11 @@ export default function Trick({ category, title, description }) {
       )}
 
       {/* Card Back */}
-      {flipped && (
+      {flipped && 
         <div className="card-back">
           <p>{description}</p>
         </div>
-      )}
+      }
     </div>
   );
 }

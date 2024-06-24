@@ -215,9 +215,8 @@ export default function App() {
                 key={trick.title}
                 category={trick.category}
                 title={trick.title}
-                description={trick.description}
-              />
-            );
+                description={trick.description}/>
+            )
           })}
         </div>
       </div>
